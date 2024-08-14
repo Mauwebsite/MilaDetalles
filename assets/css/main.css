@@ -1326,12 +1326,28 @@ input, select, textarea {
 
 
 	
-	.imagen-flotante {
+		.imagen-flotante {
 			position: fixed;
 			bottom: 10px;
 			right: 10px;
 			z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
-			width: 100px;
+			width: 85px;
+			animation: saltar 2s infinite;
+		}
+		.imagen-flotante2 {
+			position: fixed;
+			bottom: 100px;
+			right: 10px;
+			z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+			width: 95px;
+			animation: saltar 2s infinite;
+		}
+		.imagen-flotante3 {
+			position: fixed;
+			bottom: 210px;
+			right: 10px;
+			z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+			width: 85px;
 			animation: saltar 2s infinite;
 		}
 		@keyframes saltar {
@@ -1572,11 +1588,13 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			height: 30rem;
 		}
 
 		.image.fit {
 			display: block;
-			width: 100%;
+			/* width: 100%; */
+			
 		}
 
 		.image.featured {
