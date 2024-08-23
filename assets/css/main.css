@@ -72,6 +72,13 @@ input, select, textarea {
 	appearance: none;
 }
 
+.info{
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+	font-family:'Source Sans Pro', sans-serif;
+	font-size: 16px;
+}
 /* Row */
 
 	.row {
@@ -1324,7 +1331,31 @@ input, select, textarea {
 			transition: none !important;
 		}
 
+		.qr-code{
+			font-size: 60px; /* Hace el icono mucho más grande */
+			color: rgb(41, 41, 41);
+			background-color: rgb(255, 239, 206); /* Fondo de color blanco */
+			border-radius: 50%; /* Fondo circular */
+			position: fixed; /* Posición fija en la pantalla */
+			bottom: 15px; /* Situado en la parte inferior */
+			left: 13px; /* Situado en la parte izquierda */
+			padding: 20px; /* Espacio alrededor del icono */
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+			z-index: 1000;
+		}
 
+		.link-code{
+			font-size: 60px; /* Hace el icono mucho más grande */
+			color: rgb(41, 41, 41);
+			background-color: rgb(255, 239, 206); /* Fondo de color blanco */
+			border-radius: 50%; /* Fondo circular */
+			position: fixed; /* Posición fija en la pantalla */
+			bottom: 15px; /* Situado en la parte inferior */
+			left: 123px; /* Situado en la parte izquierda */
+			padding: 20px; /* Espacio alrededor del icono */
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+			z-index: 1000;
+		}
 	
 		.imagen-flotante {
 			position: fixed;
@@ -1773,6 +1804,7 @@ input, select, textarea {
 		text-decoration: none;
 		position: relative;
 		text-decoration: none;
+
 	}
 
 		.icon:before {
@@ -1790,10 +1822,12 @@ input, select, textarea {
 
 		.icon.solid:before {
 			font-weight: 900;
+			color: #464545;
 		}
 
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
+			color: #464545;
 		}
 
 		.icon:before {
@@ -2084,8 +2118,8 @@ input, select, textarea {
 						margin-top: -1.375em;
 						width: 2.75em;
 						height: 2.75em;
-						background: #000;
-						background: rgba(0, 0, 0, 0.75);
+						background: #f3f3f3;
+						background: rgba(254, 209, 63, 0.75);
 						color: #ffffff;
 						text-align: center;
 						line-height: 2.75em;
