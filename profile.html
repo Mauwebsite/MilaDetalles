@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/profile.css" />
+    <title>Perfil de Milagros</title>
+</head>
+<body>
+    <button class="close-button" onclick="goBack()">x</button>
+    <img src="images/mili.png" alt="Milagros"></img>
+    <p>Milagros Arizaca Soto</p>
+    <b>Vendedora / Emprendedora</b>
+    <p>Mila Detalles</p>
+
+    <img src="images/MilaDetalles-qr.png" alt="Mi QR" class="qr"></img>
+
+    <button onclick="showInstructions()">📱 Agregar al inicio</button>
+    <button onclick="downloadImage()">📷 Agregar a Galeria</button>
+
+    <div id="instructions" style="display: none;">
+        <p>Para agregar esta página a la pantalla de inicio:</p>
+        <ol>
+            <li>Abre el menú de tu navegador.</li>
+            <li>Selecciona "Agregar a la pantalla de inicio".</li>
+        </ol>
+    </div>
+
+     <script src="assets/js/profile.js"></script>
+</body>
+</html>
