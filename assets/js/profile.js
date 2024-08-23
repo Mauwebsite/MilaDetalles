@@ -7,8 +7,8 @@ function showInstructions() {
 }
 function downloadImage() {
     const link = document.createElement('a');
-    link.href = 'qr_image.png';
-    link.download = 'qr_image.png';
+    link.href = 'images/MilaDetalles-qr.png';
+    link.download = 'images/MilaDetalles-qr.png';
     link.click();
 }
 
@@ -16,7 +16,7 @@ function sharePage() {
     if (navigator.share) {
         navigator.share({
             title: 'Mila Detalles',
-            text: '¡Echa un vistazo a esta página!',
+            text: '¡Dale un vistazo a mi sitio web ^^',
             url: window.location.href
         }).then(() => {
             console.log('¡Página compartida con éxito!');
